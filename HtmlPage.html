@@ -1,0 +1,73 @@
+﻿<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+    <meta charset="utf-8">
+    <title></title>
+    <link rel="stylesheet" href="style.css">
+    <link href="aboutimg/style.css" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css?family=Hind&display=swap" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" charset="utf-8"></script>
+    <script>
+        //$(function () {
+        //    $("#test-3").hide();
+        //    $("#test").click(function () {
+        //        //$("#test-1").hide();
+        //        $("#test-3").slideToggle("100");
+
+        //    });
+        //});
+    </script>
+</head>
+<body>
+
+    <div class="testimonial-section">
+        <div class="inner-width">
+            <h1>About Us</h1>
+            <!--<div class="testimonial-pics" id="test">
+        <img src="aboutimg/reddysir.jpg" alt="guide"/>
+        <br />
+    </div>
+    <div class="testimonial-contents">
+        <div class="testimonial active" id="test-3">
+            <p>VentakReddy <br/>Internal Guide</p>
+            <span class="description">Assistant professor<br />Department of MCA, SIT </span>
+        </div>
+    </div>
+    <br /><hr />-->
+            <div class="testimonial-pics">
+
+                <img src="aboutimg/harsha.jpg" alt="test-1" class="active" />
+                <img src="aboutimg/yash.jpg" alt="test-2">
+
+            </div>
+
+
+            <div class="testimonial-contents">
+
+                <div class="testimonial active" id="test-1">
+                    <p>Harsha</p>
+                    <span class="description">MCA Student From SIT<br /><br />Contact Us:<br /><a href="tel:+918618207959">call</a>: 8618207959<br />mailid:<a href="mailto:harshakumarmagadi@gmail.com">harshakumarmagadi@gmail.com</a> </span>
+                </div>
+
+                <div class="testimonial" id="test-2">
+                    <p>Yashvanthkumar</p>
+                    <span class="description">MCA Student From SIT<br /><br />Contact Us:<br /><a href="tel:+917892740993">call</a>: 7892740993<br />mailid:<a href="mailto:yashvanthkumarkp@gmail.com">yashvanthkumarkp@gmail.com</a> </span>
+                </div>
+
+
+            </div>
+        </div>
+        </div>
+
+    <script type="text/javascript">
+      $('.testimonial-pics img').click(function(){
+        $(".testimonial-pics img").removeClass("active");
+        $(this).addClass("active");
+
+        $(".testimonial").removeClass("active");
+        $("#"+$(this).attr("alt")).addClass("active");
+      });
+    </script>
+
+</body>
+</html>
